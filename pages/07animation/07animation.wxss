@@ -1,0 +1,6 @@
+/* pages/07animation/07animation.wxss */
+.animation_box{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: pink;
+}

@@ -1,0 +1,31 @@
+/* pages/06notice/06notice.wxss */
+.swiper_container{
+  background-color: pink;
+  height: 48rpx;
+}
+.animation_box {
+  width: 538rpx;  
+  height: 48rpx;
+  line-height: 48rpx;
+  overflow: hidden;
+  background-color: pink;
+
+}
+.animation_text {
+  white-space: nowrap;
+  font-size: 13px;
+  
+}
+.marquee_box {
+  width: 538rpx;  
+  height: 48rpx;
+  line-height: 48rpx;
+  background-color: pink;
+  overflow: hidden;
+  position: relative;
+}
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}

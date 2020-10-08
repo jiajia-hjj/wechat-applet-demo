@@ -1,0 +1,20 @@
+<!--pages/06notice/06notice.wxml-->
+<view>方法1：swiper标签</view>
+<swiper class="swiper_container" autoplay="true" circular="true" interval="3000" duration="1500">
+    <swiper-item  wx:for="{{msgList}}" wx:key="item">
+      <view class="swiper_item">{{item}}</view>
+    </swiper-item>
+</swiper>
+
+<view>方法2：animation动画</view>
+<view class="animation_box">
+  <view class="animation_text" animation="{{animationData}}"> {{animationText}}</view>
+</view>
+
+
+<view>方法3：插件形式</view>
+<view class="marquee_box">
+  <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px; font-size: {{size}}px;"> {{text}}</view>
+</view>
+
+

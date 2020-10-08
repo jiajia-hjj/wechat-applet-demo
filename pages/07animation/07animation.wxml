@@ -1,0 +1,4 @@
+<!--pages/07animation/07animation.wxml-->
+<button type="primary" bindtap="clickAnimation">点击做动画</button>
+
+<view class="animation_box" animation="{{animationData}}"></view>

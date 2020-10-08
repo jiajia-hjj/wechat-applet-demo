@@ -1,0 +1,58 @@
+/* components/navbar/navbar.wxss */
+@import '../../iconfont/iconfont.wxss';
+.topbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+    background: #fff;
+}
+.status {
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color: #000;
+
+}
+ 
+.navbar_back {
+  padding: 0 32rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+ 
+.navbar_back .icon_back {
+ font-size: 32rpx;
+}
+ 
+.navbar_title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  
+
+}
+.navbar_title .title_txt {
+  width: 40%;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+   font-size: 34rpx;
+  font-weight: bold;
+  
+}

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<navigator class="item" url= "/pages/01loadimg/01loadimg">01上传图片</navigator>
+<navigator class="item" url= "/pages/02toprogram/02toprogram">02跳转小程序</navigator>
+<navigator class="item" url= "/pages/03post/03post">03批量图片合成</navigator>
+<navigator class="item" url="/pages/04jiugongge/04jiugongge">04九宫格</navigator>
+<navigator class="item" url="/pages/05dazhuanpan/05dazhuanpan">05大转盘</navigator>
+<navigator class="item" url="/pages/06notice/06notice">06文字走马灯</navigator>
+<navigator class="item" url="/pages/07animation/07animation">07动画animation</navigator>
+<navigator class="item" url="/pages/08pay/08pay">08微信支付</navigator>
+<navigator class="item" url="/pages/09location/09location">09百度地图定位</navigator>
+<navigator class="item" url="/pages/10canvas/10canvas">10canvas原生</navigator>

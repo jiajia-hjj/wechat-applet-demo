@@ -1,0 +1,8 @@
+<!--components/tip/tip.wxml-->
+<view class="tip" style="width:{{tipObj.width}}rpx;height:{{tipObj.height}}rpx;padding-top:{{tipObj.paddingTop}}rpx;border-radius:{{tipObj.borderRadius}}rpx" wx:if="{{isShowTip}}">
+    <text class="iconfont {{tipObj.icon}}" 
+    style="font-size:{{tipObj.iconfontSize}}rpx;padding-bottom:{{tipObj.iconBottom}}rpx"></text>
+    <view class="tip_text" style="font-size:{{tipObj.fontSize}}rpx">
+      <rich-text nodes="{{tipObj.text}}"></rich-text>
+    </view>
+</view>
