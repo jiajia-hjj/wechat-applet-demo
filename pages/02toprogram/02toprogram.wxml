@@ -1,0 +1,2 @@
+<!--pages/toprogram/toprogram.wxml-->
+<view bindtap="toAnotherProgram">去主小程序</view>

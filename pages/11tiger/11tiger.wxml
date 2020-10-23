@@ -1,0 +1,63 @@
+<view class="draw p_re">
+  <image style="width: 100%;" src="https://sprogram.xxfgo.com/images/eleven/eleven2/bg2.jpg" mode="widthFix" />
+  <view class="draw_content">
+    <image style="width:506rpx; position: absolute;top:0rpx;left:18rpx"
+      src="https://sprogram.xxfgo.com/images/eleven/eleven2/draw_bg.png" mode="widthFix" />
+    <!-- <view class="draw_list" wx:for="{{[1,2,3]}}"  style=" transform: rotateX({{index==0?animation0:index==1?animation1:animation2}}deg); transition-duration:{{index==0?time0:index==1?time1:time2}}s;margin-top:100rpx">
+            <view class="draw_item"
+            wx:for="{{index==0?redEnvelopeList0:index==1?redEnvelopeList1:redEnvelopeList2 }}" wx:for-index="i"
+                    wx:key="i"
+                    style="transform:rotateX({{180-(360/redEnvelopeList0.length)*(i)}}deg) translateZ({{130}}rpx);">
+                <view class="item_ele">
+                    <image
+                        src="https://sprogram.xxfgo.com/images/eleven/eleven2/prize_bg.png"
+                        style="width:100rpx" mode="widthFix" />
+                </view>
+            </view>
+        </view> -->
+    <template is="draw" data="{{list:0,prizeList:prizeList.prizeList0,animation:animation0,time:time0}}"></template>
+    <template is="draw" data="{{list:1,prizeList:prizeList.prizeList1,animation:animation1,time:time1}}"></template>
+    <template is="draw" data="{{list:2,prizeList:prizeList.prizeList2,animation:animation2,time:time2}}"></template>
+
+  </view>
+  <view class="myprize_btn p_ab" catchtap="getPrizeList"></view>
+  <view class="draw_btn p_ab" catchtap="onStart"></view>
+</view>
+<!-- 抽奖 -->
+<template name="draw">
+  <view class="draw_list" style="transform:rotateX({{animation}}deg); transition-duration:{{time}}s">
+    <view class="draw_item" wx:for="{{prizeList}}" wx:key="type"
+      style="transform:rotateX({{180-(360/prizeList.length)*(index)}}deg) translateZ({{130}}rpx);">
+      <view class="item_ele">
+        <view style="position:absolute;top:0;left:0;">{{item.type}}</view>
+        <image src="https://sprogram.xxfgo.com/images/eleven/eleven2/prize_bg.png" style="width:100rpx"
+          mode="widthFix" />
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<view class="list_box" style="margin:300rpx">
+  <view class="list">
+    <view class="item item1">
+      <view class="item-ele">1</view>
+    </view>
+    <view class="item item2">
+      <view class="item-ele">2</view>
+    </view>
+    <view class="item item3">
+      <view class="item-ele">3</view>
+    </view>
+    <view class="item item4">
+      <view class="item-ele">4</view>
+    </view>
+    <view class="item item5">
+      <view class="item-ele">5</view>
+    </view>
+    <view class="item item6">
+      <view class="item-ele">6</view>
+    </view>
+  </view>
+
+</view>

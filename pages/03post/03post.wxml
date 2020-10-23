@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<block  wx:for="{{posterConfigs}}"> 
+
+ <poster class="poster" hide-loading="{{true}}" preload="{{false}}" config="{{item}}" bind:success="posterSave" bind:fail="onPosterFail" data-index="{{index}}">
+ <image mode="widthFix" style="width:400rpx;" src="{{images[index]}}" ></image>
+   点击合成
+ </poster>
+
+
+
+</block>
+    ===================================================
+<button  bindtap="downloadSelectImgs" style="background-color:pink">批量下载选中合成的图片按钮</button>
+    ===================================================
+
+<button bindtap="downloadComposeImgs" style="background-color:yellow">批量合成下载图片按钮</button>
+    ===================================================
+
+<button bindtap="downloadImgs"  style="background-color:red">批量下载图片按钮</button>

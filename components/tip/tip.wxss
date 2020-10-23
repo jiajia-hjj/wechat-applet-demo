@@ -1,0 +1,26 @@
+/* components/tip/tip.wxss */
+@import '../../iconfont/iconfont.wxss';
+.tip{
+  position: fixed;
+  width: 150rpx;
+  height:50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 999999;
+  border-radius:20rpx;
+  text-align: center;
+  padding:22rpx 18rpx;
+  color: #fff;
+  box-sizing: border-box;
+}
+.iconfont{
+  font-size: 30rpx;
+  padding-bottom:10rpx;
+  display: block;
+}
+.tip_text{
+  white-space:pre-wrap;
+  font-size: 24rpx
+}

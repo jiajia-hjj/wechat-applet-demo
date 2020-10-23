@@ -1,0 +1,29 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/01loadimg/01loadimg",
+    "pages/02toprogram/02toprogram",
+    "pages/03post/03post",
+    "pages/04jiugongge/04jiugongge",
+    "pages/05dazhuanpan/05dazhuanpan",
+    "pages/06notice/06notice",
+    "pages/07animation/07animation",
+    "pages/08pay/08pay",
+    "pages/09location/09location",
+    "pages/10canvas/10canvas",
+    "pages/11tiger/11tiger",
+    "pages/12machine/machine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxba1601db37df42fb"
+  ]
+}

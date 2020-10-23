@@ -1,0 +1,141 @@
+
+image {
+  display: block;
+  margin-top: -1rpx;
+
+}
+
+.p_re {
+  position: relative;
+}
+
+.p_ab {
+  position: absolute;
+  border: 1px solid springgreen;
+}
+
+.draw {
+  overflow: hidden;
+
+  perspective: 1000px;
+  width: 750rpx;
+  height: 616rpx;
+}
+.draw .draw_btn {
+  width: 495rpx;
+  height: 98rpx;
+  bottom: 55rpx;
+  left: 129rpx;
+}
+
+.draw .myprize_btn {
+  width: 96rpx;
+  height: 96rpx;
+  bottom: 58rpx;
+  right: 28rpx;
+}
+.draw .draw_content {
+  padding: 0 20rpx;
+  width: 546rpx;
+  height: 315rpx;
+  /* overflow: hidden; */
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top:130rpx;
+  left: 105rpx;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+.draw .draw_list {
+  margin-top: 100rpx;
+  width: 110rpx;
+  height: 110rpx;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-origin:55rpx 55rpx;
+  /* animation: routate 2s infinite; */
+}
+.draw .draw_item {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  animation-timing-function: ease;
+  position: absolute;
+}
+
+.draw .item_ele {
+  width: 110rpx;
+  position: absolute;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.list_box{
+  width:120rpx;
+  height:120rpx; 
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  border: 1px solid slateblue;
+  perspective: 1000px;
+}
+.list{
+  transform-origin:60rpx 60rpx;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  animation: routate 2s infinite;
+}
+.item{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  border: 1px solid slateblue;
+}
+
+.item-ele{
+  margin: auto;
+  width: 100rpx;
+  height:100rpx;
+ background-color: pink;text-align: center;
+ font-size: 36rpx;
+ line-height: 100rpx;
+}
+
+.item1{
+  transform:  rotateX(0deg) translateZ(120rpx);
+}
+.item2{
+  transform: rotateX(-60deg) translateZ(120rpx);
+}
+.item3{
+  transform: rotateX(60deg) translateZ(120rpx);
+}
+.item4{
+  transform: rotateX(120deg) translateZ(120rpx);
+}
+.item5{
+  transform: rotateX(-120deg) translateZ(120rpx);
+}
+.item6{
+  transform: rotateX(180deg) translateZ(120rpx);
+}
+
+@keyframes routate{
+  0%{
+    transform: rotate3d(-100,0,0,0deg);
+  }
+  100%{
+    transform: rotate3d(-100,0,0,360deg);
+  }
+}

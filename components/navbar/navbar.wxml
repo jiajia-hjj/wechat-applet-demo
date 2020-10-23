@@ -1,0 +1,17 @@
+<!--components/navbar/navbar.wxml-->
+<view style="height:{{statusHeight+navHeight}}px" hidden="{{false}}"></view>
+<view class="topbar" style="background:{{navbarInfo.navbarColor}}">
+  <view class="status" style="height:{{statusHeight}}px"></view>
+  <view class="navbar" style="height:{{navHeight}}px;color:{{navbarInfo.textColor}}">
+    <view class="navbar_back" bindtap="backClick" wx:if="{{navbarInfo.isShowNavLeft}}">
+      <text class="iconfont icon_back"></text>
+    </view>
+    <view class="navbar_title" style="height:{{navHeight}}px">
+    <view class="title_txt"> 
+      <slot name="title"></slot>
+          <!-- {{navbarObj.title}} -->
+      </view>
+        
+    </view>
+  </view>
+</view>
